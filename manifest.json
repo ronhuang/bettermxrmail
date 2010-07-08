@@ -1,0 +1,18 @@
+{
+  "name": "Better MXR Mail",
+  "version": "0.1",
+
+  "description": "Better UX for MXR mail.",
+  "icons": {
+    "16": "mxr_icon_16.png",
+    "48": "mxr_icon_48.png",
+    "128": "mxr_icon_128.png"
+  },
+
+  "background_page": "background.html",
+  "content_scripts": [{
+    "js": ["change.js"],
+    "matches": ["http://mail.google.com/a/mixedrealitylab.org/*",
+                "https://mail.google.com/a/mixedrealitylab.org/*"]
+   }]
+}
